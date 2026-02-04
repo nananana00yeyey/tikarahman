@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadine | Coding Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+            background: rgba(0,0,0,0.4);
+        }
+
+        nav h2 {
+            color: #4dd0e1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #4dd0e1;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #4dd0e1;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 15px auto 30px;
+            opacity: 0.85;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            background: #4dd0e1;
+            color: #000;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 80px 60px;
+        }
+
+        .title {
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            text-align: center;
+        }
+
+        .skill h3 {
+            margin-bottom: 10px;
+            color: #4dd0e1;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 25px;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Tika Rahman</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#Profile">Profile</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <div>
+        <h1>Hi, I'm <span>Tika</span></h1>
+        <p>Siswa Budi Luhur yang tertarik pada dunia coding, web design, dan teknologi masa depan.</p>
+        <a href="#portfolio" class="btn">See My Work</a>
+    </div>
+</div>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="card about">
+        <p>
+            Nama saya Tika Rahman. Saya sedang belajar web development
+            menggunakan HTML, CSS, dan dasar JavaScript. Saya suka membuat tampilan website
+            yang rapi, modern, dan mudah digunakan.
+        </p>
+    </div>
+</section>
+
+<section id="Profile">
+    <h2 class="title">Profile</h2>
+    <div class="Profile">
+        <div class="card Profile">
+            <h3>Instagram</h3>
+            <p>@tikaarhmn</p>
+        </div>
+        <div class="card Profile">
+            <h3>TTL</h3>
+            <p>Tangerang, 5 Juni 2008</p>
+        </div>
+        <div class="card Profile">
+            <h3>Email</h3>
+            <p>blsma.23241152@budiiluhur.sch.id</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="title">Portfolio</h2>
+    <div class="portfolio">
+        <div class="card project">
+            <h3>Anggota organisasi</h3>
+            <p>Menjabat sebagai anggota organisasi</p>
+        </div>
+        <div class="card project">
+            <h3>Skill public speaking</h3>
+            <p>MC dengan audiens lebih dari 300 orang.</p>
+        </div>
+        <div class="card project">
+            <h3>Mini Project</h3>
+            <p>Wakil ketua Youthforia divisi Acara.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="card about">
+        <p>Email: tika@email.com</p>
+        <p>Instagram: @tikaarhmn</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Tika | Coding Portfolio
+</footer>
+
+</body>
+</html>
